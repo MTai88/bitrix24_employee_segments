@@ -1,0 +1,19 @@
+{
+	"name": "mtai/employeesegments",
+	"description": "Portal employees as a data source for Bitrix24 Sender (marketing) mailing segments",
+	"type": "bitrix-module",
+	"keywords": ["bitrix", "bitrix24", "sender", "mailing", "segments", "intranet", "employees"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "MTai88 (Tair Minsafaev)"
+		}
+	],
+	"require": {
+		"php": ">=8.1"
+	},
+	"extra": {
+		"bitrix-module-id": "mtai.employeesegments",
+		"install-path": "local/modules/mtai.employeesegments"
+	}
+}
