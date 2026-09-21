@@ -105,8 +105,7 @@ mtai.employeesegments/
 │   │   └── employee.php   # коннектор «Сотрудники портала» (BaseFilter)
 │   └── eventhandler.php   # регистрация в OnConnectorList
 ├── README.md
-├── composer.json
-└── LICENSE
+└── composer.json
 ```
 
 ### Добавление своих фильтров
@@ -125,23 +124,3 @@ mtai.employeesegments/
 - сегмент «Сотрудники портала» создаётся и считается в стандартном UI;
 - письмо по сегменту доставляется сотрудникам, теги персонализации подставляются;
 - отписки/чёрный список «Рассылок» применяются к сотрудникам штатным образом.
-
-## Лицензия
-
-MIT — см. [LICENSE](LICENSE).
-
----
-
-# (EN) Portal employees as Bitrix24 mailing segments
-
-Module `mtai.employeesegments` adds the **"Portal employees"** data source to the
-**Marketing (Mailings, `/marketing/`)** module segments, so a Bitrix24 corporate portal
-**without CRM** can build segments from its own users (employees).
-
-It registers a `\Bitrix\Sender\Connector\BaseFilter`-compatible connector via the stock
-`OnConnectorList` event — no core edits. Filters: activity, department (with
-subdepartments), user group, position, name/email/login search, last login and
-registration dates. Personalization tags: `#NAME#`, `#EMPLOYEE_LOGIN#`,
-`#EMPLOYEE_POSITION#`, `#EMPLOYEE_WORK_PHONE#`. Install: copy to
-`local/modules/mtai.employeesegments` and install from the admin module list.
-MIT licensed.
